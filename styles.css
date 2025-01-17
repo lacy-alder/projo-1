@@ -1,0 +1,124 @@
+.container{}
+.flexbox-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+}
+.flexbox-item{ 
+    height: 30px;
+    background-color: white;
+}
+.flexbox-item-1{
+    width: 130px;
+}
+.flexbox-item-2{
+    flex-grow: .2;
+    width: 20px;
+}
+.flexbox-item-3{
+    width: 50px;
+    background-color: black;
+    align-content: space-around;
+}
+.grid-container1{
+    display: grid;
+    grid-template-columns: 500x 500px 500px 500px;
+    justify-content: space-around;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "sidebar1 header header sidebar2"
+    "sidebar3 main main sidebar4"
+    
+}
+.grid-item-1{
+    grid-area: sidebar1;
+    justify-self: flex-start;
+}
+.grid-item-2{
+    grid-area: header;
+    justify-self: right;
+    font-style: oblique;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    flex-wrap: wrap;
+    width: 700px;
+}
+.grid-item-3{
+    grid-area: sidebar2;
+    justify-self: flex-end;
+}
+.grid-item-4{
+    grid-area: sidebar3;
+    justify-self: flex-start;
+}
+.grid-item-5{
+    grid-area: main;
+    justify-self: center;
+    flex-wrap: wrap;
+    width: 500px;
+    font-style: oblique;
+    font-size: large;
+}
+.grid-item-6{
+    grid-area: sidebar4;
+    justify-self: flex-end;
+}
+
+.grid-container2{
+    display: grid;
+    grid-template-columns:500px 500px 500px;
+    column-gap: 10px;
+    background-color: white;
+}
+
+.grid-item-11{
+    background-color: blueviolet;
+    justify-self: center;
+}
+.grid-item-22{
+    background-color: slategrey;
+    justify-self: center;
+}
+.grid-item-33{
+    background-color: lightcoral;
+    justify-self: left;
+}
+
+.grid-container3{
+    display: grid;
+    background-color: lightsalmon;
+    column-gap: 20px;
+    row-gap: 10px;
+    grid-template-columns: 500x 500px 500px 500px 500px 500px;
+  grid-template-rows: auto 300px;
+  grid-template-areas: 
+    "header header header header header header"
+    ". sidebar1 sidebar2 sidebar3 sidebar4 ."
+}
+.grid-item-111{ 
+    grid-area: header;
+    justify-self: center;
+    font-style: oblique;
+    font-size: x-large;
+}
+.grid-item-222{
+     grid-area: sidebar1;
+     background-color: white;
+     justify-items: center;
+    }
+.grid-item-333{
+    grid-area: sidebar2;
+    background-color: white;
+    justify-items: center;
+}
+.grid-item-444{
+    grid-area: sidebar3;
+    background-color: white;
+    justify-items: center;
+}
+.grid-item-555{
+    grid-area: sidebar4;
+    background-color: white;
+    justify-items: center;
+}
