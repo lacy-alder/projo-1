@@ -54,7 +54,7 @@
     grid-area: sidebar3;
     justify-self: flex-start;
 }
-.grid-item-5{
+.grid-item-5{cd
     grid-area: main;
     justify-self: center;
     flex-wrap: wrap;
