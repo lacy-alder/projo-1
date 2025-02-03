@@ -1,124 +1,132 @@
-.container{}
-.flexbox-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: baseline;
-}
-.flexbox-item{ 
-    height: 30px;
-    background-color: white;
-}
-.flexbox-item-1{
-    width: 130px;
-}
-.flexbox-item-2{
-    flex-grow: .2;
-    width: 20px;
-}
-.flexbox-item-3{
-    width: 50px;
-    background-color: black;
-    align-content: space-around;
-}
-.grid-container1{
-    display: grid;
-    grid-template-columns: 500x 500px 500px 500px;
-    justify-content: space-around;
-  grid-template-rows: auto;
-  grid-template-areas: 
-    "sidebar1 header header sidebar2"
-    "sidebar3 main main sidebar4"
-    
-}
-.grid-item-1{
-    grid-area: sidebar1;
-    justify-self: flex-start;
-}
-.grid-item-2{
-    grid-area: header;
-    justify-self: right;
-    font-style: oblique;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    flex-wrap: wrap;
-    width: 700px;
-}
-.grid-item-3{
-    grid-area: sidebar2;
-    justify-self: flex-end;
-}
-.grid-item-4{
-    grid-area: sidebar3;
-    justify-self: flex-start;
-}
-.grid-item-5{
-    grid-area: main;
-    justify-self: center;
-    flex-wrap: wrap;
-    width: 500px;
-    font-style: oblique;
-    font-size: large;
-}
-.grid-item-6{
-    grid-area: sidebar4;
-    justify-self: flex-end;
+/* Apply a default font family */
+body {
+  font-family: 'Arial', sans-serif;
 }
 
-.grid-container2{
-    display: grid;
-    grid-template-columns:500px 500px 500px;
-    column-gap: 10px;
-    background-color: white;
+/* Container Styles */
+.container {
+  max-width: 80rem; /* Limit the maximum width of the container */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 2rem; /* Add some padding to the container */
 }
 
-.grid-item-11{
-    background-color: blueviolet;
-    justify-self: center;
-}
-.grid-item-22{
-    background-color: slategrey;
-    justify-self: center;
-}
-.grid-item-33{
-    background-color: lightcoral;
-    justify-self: left;
+/* Header Styles */
+.header-container {
+  display: flex; /* Use flexbox to align the header items */
+  justify-content: space-between; /* Distribute the items evenly with space between them */
+  align-items: center; /* Align the items vertically in the center */
+  background-color: white; /* Set the background color of the header */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Add a subtle box-shadow */
+  padding: 1rem 1.5rem; /* Add some padding to the header */
 }
 
-.grid-container3{
-    display: grid;
-    background-color: lightsalmon;
-    column-gap: 20px;
-    row-gap: 10px;
-    grid-template-columns: 500x 500px 500px 500px 500px 500px;
-  grid-template-rows: auto 300px;
-  grid-template-areas: 
-    "header header header header header header"
-    ". sidebar1 sidebar2 sidebar3 sidebar4 ."
+.header-item a {
+  color: #4B5563; /* Set the link color to a light gray */
+  text-decoration: none; /* Remove the underline from the links */
+  margin-right: 1rem; /* Add some spacing between the links */
 }
-.grid-item-111{ 
-    grid-area: header;
-    justify-self: center;
-    font-style: oblique;
-    font-size: x-large;
+
+.header-item a:hover {
+  color: #374151; /* Change the link color on hover to a slightly darker gray */
 }
-.grid-item-222{
-     grid-area: sidebar1;
-     background-color: white;
-     justify-items: center;
-    }
-.grid-item-333{
-    grid-area: sidebar2;
-    background-color: white;
-    justify-items: center;
+
+.login-btn {
+  background-color: #6366F1; /* Set the button background color to a shade of indigo */
+  color: white; /* Set the button text color to white */
+  padding: 0.5rem 1rem; /* Add some padding to the button */
+  border-radius: 0.375rem; /* Add a medium-sized border radius */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
 }
-.grid-item-444{
-    grid-area: sidebar3;
-    background-color: white;
-    justify-items: center;
+
+.login-btn:hover {
+  background-color: #4F46E5; /* Change the button background color on hover */
 }
-.grid-item-555{
-    grid-area: sidebar4;
-    background-color: white;
-    justify-items: center;
+
+/* Main Content Styles */
+.main-content-container {
+  display: grid; /* Use a grid layout for the main content */
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  grid-template-rows: repeat(2, auto); /* Allow the rows to auto-adjust based on the content */
+  gap: 1.5rem; /* Add some spacing between the grid items */
+  margin-top: 3rem; /* Add some top margin to the main content */
+}
+
+.main-title {
+  font-size: 2.25rem; /* Set the font size of the main title */
+  font-weight: bold; /* Make the main title bold */
+  margin-bottom: 1rem; /* Add some bottom margin to the main title */
+}
+
+.main-description {
+  color: #6B7280; /* Set the text color of the main description to a light gray */
+  margin-bottom: 2rem; /* Add some bottom margin to the main description */
+}
+
+.get-started-btn {
+  background-color: #6366F1; /* Set the button background color to a shade of indigo */
+  color: white; /* Set the button text color to white */
+  padding: 0.5rem 1rem; /* Add some padding to the button */
+  border-radius: 0.375rem; /* Add a medium-sized border radius */
+  border: none; /* Remove the button border */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the button */
+}
+
+.get-started-btn:hover {
+  background-color: #4F46E5; /* Change the button background color on hover */
+}
+
+/* Featured Pets Styles */
+.featured-pets-container {
+  display: grid; /* Use a grid layout for the featured pets */
+  grid-template-columns: repeat(3, 1fr); /* Create a 3-column grid */
+  gap: 1.5rem; /* Add some spacing between the grid items */
+  margin-top: 3rem; /* Add some top margin to the featured pets section */
+}
+
+.featured-pets-item {
+  background-color: white; /* Set the background color of the featured pet cards */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Add a subtle box-shadow */
+  border-radius: 0.375rem; /* Add a medium-sized border radius */
+  overflow: hidden; /* Hide any content that exceeds the card's dimensions */
+}
+
+/* Features Styles */
+.features-container {
+  display: grid; /* Use a grid layout for the features */
+  grid-template-columns: repeat(5, 1fr); /* Create a 5-column grid */
+  gap: 1.5rem; /* Add some spacing between the grid items */
+  margin-top: 3rem; /* Add some top margin to the features section */
+}
+
+.features-item {
+  background-color: white; /* Set the background color of the feature cards */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Add a subtle box-shadow */
+  border-radius: 0.375rem; /* Add a medium-sized border radius */
+  padding: 1rem; /* Add some padding to the feature cards */
+  text-align: center; /* Center the content horizontally */
+}
+
+.features-title {
+  font-size: 2.25rem; /* Set the font size of the features title */
+  font-weight: bold; /* Make the features title bold */
+  margin-bottom: 1rem; /* Add some bottom margin to the features title */
+}
+
+.features-description {
+  color: #6B7280; /* Set the text color of the features description to a light gray */
+}
+
+.feature-icon {
+  margin-bottom: 0.5rem; /* Add some bottom margin to the feature icons */
+}
+
+.feature-title {
+  font-size: 1.125rem; /* Set the font size of the feature titles */
+  font-weight: bold; /* Make the feature titles bold */
+  margin-bottom: 0.5rem; /* Add some bottom margin to the feature titles */
+}
+
+.feature-description {
+  color: #6B7280; /* Set the text color of the feature descriptions to a light gray */
 }
