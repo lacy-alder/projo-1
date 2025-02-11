@@ -1,0 +1,107 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    max-width: 80rem;
+    margin: auto;
+    padding: 2rem;
+}
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    padding: 1rem 1.5rem;
+
+}
+.header-item a {
+    color: #4B5563;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+.header-item a:hover{
+    color: #374151;
+}
+.login-btn{
+    background-color: #6366F1;
+    color: white;
+    padding: o.5rem rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+}
+.login-btn:hover{
+    background-color: #4F46E5;
+}
+.main-content-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.main-title{
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.main-description{
+    color: #6B7280;
+    margin-bottom: 2rem;
+}
+.get-started-btn{
+    background-color: #6366F1;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 0.375rem;
+    border: none;
+    cursor: pointer;
+}
+.get-started-btn:hover{
+    color: #4F46E5;
+}
+.featured-pets-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.featured-pets-item{
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0.375rem;
+    overflow: hidden;
+}
+.features-container{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+.features-item{
+    background-color: white;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border-radius: 0.375rem;
+    padding: 1rem;
+    text-align: center;
+}
+.features-title{
+    font-size: 2.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem; 
+}
+.features-description{
+    color: #6B7280;
+}
+.feature-icon{
+    margin-bottom: 0.5rem;
+}
+.feature-title{
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+.feature-description{
+    color:#6B7280;
+}
