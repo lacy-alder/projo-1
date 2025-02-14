@@ -8,10 +8,10 @@ body{
 }
 .header-container{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
     background-color: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    box-shadow: white;
     padding: 1rem 1.5rem;
 
 }
@@ -24,15 +24,15 @@ body{
     color: #374151;
 }
 .login-btn{
-    background-color: #6366F1;
+    background-color: black;
     color: white;
     padding: o.5rem rem;
-    border-radius: 0.375rem;
+    border-radius: 0.75rem;
     border: none;
     cursor: pointer;
 }
 .login-btn:hover{
-    background-color: #4F46E5;
+    background-color: black;
 }
 .main-content-container{
     display: grid;
@@ -41,6 +41,7 @@ body{
     gap: 1.5rem;
     margin-top: 3rem;
 }
+
 .main-title{
     font-size: 2.25rem;
     font-weight: bold;
@@ -64,28 +65,71 @@ body{
 .featured-pets-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
+    gap: 3rem;
     margin-top: 3rem;
 }
 .featured-pets-item{
-    background-color: white;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    text-align: center;
     border-radius: 0.375rem;
-    overflow: hidden;
+    border: none;
+}
+.featured-pets-item-1{
+    background-color: blueviolet;
+
+}
+.featured-pets-item-2{
+    background-color: slategrey;
+}
+.featured-pets-item-3{
+    background-color:  lightcoral;
 }
 .features-container{
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.5rem;
     margin-top: 3rem;
+    margin-bottom: 3rem;
+    background-color: cornsilk;
+    grid-template-areas: 
+    "header header header header header header"
+    ". sidebar1 sidebar2 sidebar3 sidebar4 ."
 }
-.features-item{
+
+.features-item-1{
+    grid-area: header;
+    background-color: cornsilk;
+}
+.features-item-2{
+    grid-area: sidebar1;
     background-color: white;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
     border-radius: 0.375rem;
     padding: 1rem;
+}
+.features-item-3{
+    grid-area: sidebar2;
+    background-color: white;
+    border-radius: o.375rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+
+}
+.features-item-4{
+    grid-area: sidebar3;
+    background-color: white;
+    border-radius: o.375rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+}
+.features-item-5{
+    grid-area: sidebar4;
+    background-color: white;
+    border-radius: o.375rem;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)
+}
+.features-item{
     text-align: center;
 }
+
+
 .features-title{
     font-size: 2.25rem;
     font-weight: bold;
